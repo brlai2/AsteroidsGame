@@ -44,6 +44,12 @@ class Spaceship extends Floater
     xCorners[3] = -4;
     yCorners[3] = 0;
   }
+}
+//void show()
+//{
+//  fill(255);
+//  public class Spaceship
+
   //setPointDirection
   //abstract public void setPointDirection(int degrees) {
   //  myPointDirection = degrees;
@@ -64,4 +70,5 @@ class Spaceship extends Floater
   //    myCenterY = height;
   //  }
   //public void show (){
-}
+  //  }
+//}
