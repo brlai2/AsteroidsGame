@@ -15,7 +15,7 @@ public void draw()
   //bob.move();
   for (int i = 0; i < mob.length; i++)
   {
-    fill(255);
-    bob.show();
+    //fill(255);
+    mob[i].show();
   }
 }

@@ -42,13 +42,27 @@ class Spaceship extends Floater
     myPointDirection = degrees;
   }
   public double getPointDirection() {
-    return (int)myPointDirection;
+    return myPointDirection;
   }
 }
-//void show()
-//{
-//  fill(255);
-//  public class Spaceship
+void show()
+{
+  fill(255);
+  class Spaceship
+  //{
+  //  corners = 4;
+  //  xCorners = new int[corners];
+  //  yCorners = new int[corners];
+  //  xCorners[0] = -8;
+  //  yCorners[0] = -8;
+  //  xCorners[1] = 16;
+  //  yCorners[1] = 0;
+  //  xCorners[2] = -8;
+  //  yCorners[2] = 8;
+  //  xCorners[3] = -4;
+  //  yCorners[3] = 0;
+  //}
+}
 
   //setPointDirection
   //abstract public void setPointDirection(int degrees) {
