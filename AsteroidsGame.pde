@@ -1,21 +1,41 @@
+Stars[] suns = new Stars[200];
 Spaceship bob = new Spaceship();
-Stars[] mob = new Stars[200];
 public void setup() 
 {
-  size(500,500);
-  for(int i = 0; i < mob.length; i++)
+  size(500, 500);
+  background(0);
+  for (int i = 0; i < suns.length; i++)
   {
-    mob[i] = new Stars();
+    suns[i] = new Stars();
   }
 }
-public void draw()
+public void draw() 
 {
-  background(0);
+  fill(255);
   bob.show();
-  //bob.move();
-  for (int i = 0; i < mob.length; i++)
+  bob.move();
+  for (int i = 0; i < suns.length; i++)
   {
-    //fill(255);
-    mob[i].show();
+    fill(255);
+    suns[i].show();
+  }
+  fill(255);
+}
+public void keyPressed()
+{
+  if (keyCode == UP) {
+    bob.accelerate(.2);
+  }
+  if (keyCode == LEFT) {
+    bob.turn(-10);
+  }
+  if (keyCode == RIGHT) {
+    bob.turn(10);
+  }
+  if (keyCode == DOWN) {
+    bob.setDirectionX(0);
+    bob.setDirectionY(0);
+    bob.setX((int)(Math.random()*798)+1);
+    bob.setY((int)(Math.random()*798)+1);
   }
 }
