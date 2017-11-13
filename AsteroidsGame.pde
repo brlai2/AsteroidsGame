@@ -3,7 +3,7 @@ Spaceship bob = new Spaceship();
 public void setup() 
 {
   size(500, 500);
-  background(0);
+  background(122);
   for (int i = 0; i < suns.length; i++)
   {
     suns[i] = new Stars();
