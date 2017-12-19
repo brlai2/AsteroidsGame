@@ -23,21 +23,21 @@ public void draw()
 }
 public void keyPressed()
 {
-  if (keyCode == UP) {
+  if (keyCode == "w") {
     bob.accelerate(.2);
   }
-  if (keyCode == LEFT) {
+  if (keyCode == "a") {
     bob.turn(-10);
   }
-  if (keyCode == RIGHT) {
+  if (keyCode == "d") {
     bob.turn(10);
   }
-  if (keyCode == DOWN) {
+  if (keyCode == "s") {
     bob.setDirectionX(0);
     bob.setDirectionY(0);
   }
-  if (keyCode == SPACEBAR) {
-  bob.setX((int)(Math.random()*798)+1);
-  bob.setY((int)(Math.random()*798)+1);
+  if (keyCode == "z") {
+    bob.setX((int)(Math.random()*798)+1);
+    bob.setY((int)(Math.random()*798)+1);
   }
 }
