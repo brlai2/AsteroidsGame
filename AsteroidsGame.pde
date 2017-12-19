@@ -36,6 +36,8 @@ public void keyPressed()
     bob.setDirectionX(0);
     bob.setDirectionY(0);
   }
+  if (keyCode == SPACEBAR) {
   bob.setX((int)(Math.random()*798)+1);
   bob.setY((int)(Math.random()*798)+1);
+  }
 }
